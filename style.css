@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Roboto, sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.header-container, .hero-container, .information-container, .quote-container, .action-container, .footer-container {
+	border: 1px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-container, .information-container, .quote-container, .action-container{
+	min-height: 300px;
+}
+
+.header-container, .hero-container, .footer-container{
+	background-color: #1F2937;
+}
+
+.header, .hero, .information, .quote, .action {
+	border: 1px solid orangered;
+	width: 80%;
+	display: flex;
+}
+
+.header, .hero, .action {
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+}
+
+.header ul{
+	display: flex;
+	gap: 16px;
+}
+
+.logo {
+	font-size: 24px;
+	color: #F9FAF8;
+}
+
+.hero, .action{
+	flex-wrap: wrap;
+}
+
+.hero {
+	gap: 16px;
+}
+
+.hero h1{
+	font-size: 48px;
+	color: #F9FAF8;
+	font-weight: 900;
+}
+
+.hero p, .header a{
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+button {
+	border: none;
+	padding: 5px 20px;
+	border-radius: 5%;
+	color: #fff;
+}
+
+.hero-text{
+	flex: 1 350px;
+}
+
+.hero-image {
+	width: 450px;
+	height: 150px;
+	background-color: lightgrey;
+}
+
+.information-container{
+	flex-direction: column;
+}
+
+.information-container h2{
+	font-size: 36px;
+	color: #1F2937;
+	font-weight: 900;
+}
+
+
+.information {
+	text-align: center;
+	justify-content: center;
+	gap: 32px;
+	flex-wrap: wrap;
+}
+
+.information-item{
+	width: 150px;
+}
+
+.information-image {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+}
+
+.quote-container {
+	background-color: #E5E7EB;
+	align-items: center;
+}
+
+.quote{
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.quote-text{
+	font-size: 36px;
+	color: #1F2937;
+	font-weight: 300;
+}
+
+.quote-author{
+	align-self: flex-end;
+}
+
+.action, button {
+	background-color: #3882F6;
+}
+
+.action button {
+	border: 2px solid white;
+}
+
+.footer-container{
+	color: white;
+}
